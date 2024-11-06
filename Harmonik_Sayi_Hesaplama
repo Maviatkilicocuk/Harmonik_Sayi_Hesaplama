@@ -1,0 +1,21 @@
+package Giris;
+import java.nio.file.LinkPermission;
+import java.util.Scanner;
+public class Harmonik_Sayi_Hesaplama {
+    public static void main(String[] args) {
+        int n;
+        System.out.print("Lütfen bir sayı giriniz : ");
+        Scanner input = new Scanner(System.in);
+        n = input.nextInt();
+
+        double x=1.0,result = 0.0;
+        do {
+
+            result += (1/x);
+            x = x +1 ;
+
+        }while (n>(x-1));
+
+        System.out.print("Harmonik sayı sonucu = " + result);
+    }
+}
